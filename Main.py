@@ -1,34 +1,20 @@
-import IMG
-from IMG import IMG as I
-from Process import Process as P
-from ColorsIMG import Color as C
-import numpy as np
-
-
-# Main class
+from Image import Image
+from Colors import Toulouse
 
 
 def Main():
-    imgName = "BlackML.jpg"
-    imgSize = 500
-    inputIMG = I.getIMG(imgName)
-    greyIMG = P.PrepareIMG(inputIMG)
-    #P.PltIMG(greyIMG, "GreyScaleIMG", 7, "gray")
+    # originalImage = Image("Shapes.jpg")
+    originalImage = Image("/Users/matthieumerville/Desktop/Art/P1.png")
 
-    contours = P.GetContours(greyIMG)
-    CIMG = inputIMG
-    Colors = C.ToulouseStyle()
-
-    CIMG = I.getBackgroundimage(inputIMG, Colors.BackgroundColor)
-
-    for i in range(0, len(contours)):
-
-        color = C.PickColor(Colors.ColorList())
-        CIMG = P.DrawOneContours(CIMG, contours, i, color)
-
-    P.PltIMG(CIMG, "Contour", 7)
+    toulouse = Toulouse()
+    newImage = originalImage.createMonoColorImage(toulouse.getRGBBackgroundColor())
+    newImage.displayV2(size=7)
+    print(str(len(originalImage.getShapes()))+" Shapes")
+    for shape in originalImage.getShapes():
+        color = toulouse.pickColor()
+        newImage.colorShape(shape, color)
+    newImage.displayV2(size=7)
 
 
 if __name__ == "__main__":
-
     Main()
