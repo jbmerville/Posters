@@ -1,0 +1,7168 @@
+{
+  "bearing": 0,
+  "center": [
+    2.155060509256373,
+    48.963887561314124
+  ],
+  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=uCGQnnA1MXHHz2tIHg1T",
+  "id": "a9255460-479f-47bc-8f2e-fe0ba64c735c",
+  "layers": [
+    {
+      "id": "background",
+      "layout": {
+        "visibility": "visible"
+      },
+      "minzoom": 0,
+      "paint": {
+        "background-color": "#FFF"
+      },
+      "type": "background"
+    },
+    {
+      "filter": [
+        "any",
+        [
+          "==",
+          "subclass",
+          "park"
+        ],
+        [
+          "==",
+          "subclass",
+          "village_green"
+        ],
+        [
+          "==",
+          "class",
+          "grass"
+        ],
+        [
+          "==",
+          "class",
+          "farmland"
+        ]
+      ],
+      "id": "landcover_grass",
+      "layout": {
+        "visibility": "visible"
+      },
+      "maxzoom": 24,
+      "metadata": {},
+      "minzoom": 9,
+      "paint": {
+        "fill-antialias": false,
+        "fill-color": "#14e64f",
+        "fill-opacity": 1
+      },
+      "source": "maptiler_planet",
+      "source-layer": "landcover",
+      "type": "fill"
+    },
+    {
+      "id": "building",
+      "layout": {
+        "visibility": "visible"
+      },
+      "maxzoom": 24,
+      "minzoom": 18,
+      "paint": {
+        "fill-antialias": true,
+        "fill-color": "#ef0b0b",
+        "fill-outline-color": "#000"
+      },
+      "source": "maptiler_planet",
+      "source-layer": "building",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "class",
+          "track"
+        ]
+      ],
+      "id": "road_serviceTrack",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-width": 1
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "wood"
+        ]
+      ],
+      "id": "landcover_wood",
+      "layout": {
+        "visibility": "visible"
+      },
+      "maxzoom": 22,
+      "metadata": {},
+      "minzoom": 9,
+      "paint": {
+        "fill-antialias": true,
+        "fill-color": "#14e64f",
+        "fill-opacity": 1,
+        "fill-outline-color": "#14e64f",
+        "fill-translate": [
+          1,
+          1
+        ]
+      },
+      "source": "maptiler_planet",
+      "source-layer": "landcover",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "ice"
+        ]
+      ],
+      "id": "landcover_ice",
+      "layout": {
+        "visibility": "visible"
+      },
+      "maxzoom": 22,
+      "metadata": {},
+      "minzoom": 9,
+      "paint": {
+        "fill-antialias": false,
+        "fill-color": "rgba(255, 255, 255, 1)",
+        "fill-opacity": 1
+      },
+      "source": "maptiler_planet",
+      "source-layer": "landcover",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "class",
+          "sand"
+        ]
+      ],
+      "id": "landcover_sand",
+      "layout": {
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "fill-antialias": false,
+        "fill-color": "rgba(246, 240, 65, 1)",
+        "fill-opacity": 0.3
+      },
+      "source": "maptiler_planet",
+      "source-layer": "landcover",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "grass"
+        ]
+      ],
+      "id": "globallandcover_grass",
+      "layout": {
+        "visibility": "visible"
+      },
+      "maxzoom": 9,
+      "minzoom": 5,
+      "paint": {
+        "fill-color": "#14e64f",
+        "fill-opacity": {
+          "stops": [
+            [
+              8,
+              1
+            ],
+            [
+              9,
+              1
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "globallandcover",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "scrub"
+        ]
+      ],
+      "id": "globallandcover_scrub",
+      "layout": {
+        "visibility": "visible"
+      },
+      "maxzoom": 9,
+      "minzoom": 5,
+      "paint": {
+        "fill-color": "#14e64f",
+        "fill-opacity": 1
+      },
+      "source": "maptiler_planet",
+      "source-layer": "globallandcover",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "tree"
+        ]
+      ],
+      "id": "globallandcover_tree",
+      "layout": {
+        "visibility": "visible"
+      },
+      "maxzoom": 9,
+      "minzoom": 5,
+      "paint": {
+        "fill-color": "#14e64f",
+        "fill-opacity": 1
+      },
+      "source": "maptiler_planet",
+      "source-layer": "globallandcover",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "forest"
+        ]
+      ],
+      "id": "globallandcover_forest",
+      "layout": {
+        "visibility": "visible"
+      },
+      "maxzoom": 9,
+      "minzoom": 5,
+      "paint": {
+        "fill-color": "#14e64f",
+        "fill-opacity": 1
+      },
+      "source": "maptiler_planet",
+      "source-layer": "globallandcover",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "snow"
+        ]
+      ],
+      "id": "globallandcover_ice",
+      "layout": {
+        "visibility": "visible"
+      },
+      "maxzoom": 9,
+      "minzoom": 0,
+      "paint": {
+        "fill-color": "rgba(255, 255, 255, 0.9)",
+        "fill-opacity": 1
+      },
+      "source": "maptiler_planet",
+      "source-layer": "globallandcover",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ],
+        [
+          "in",
+          "class",
+          "residential",
+          "suburb",
+          "neighbourhood"
+        ]
+      ],
+      "id": "landuse-residential",
+      "layout": {
+        "visibility": "visible"
+      },
+      "maxzoom": 24,
+      "paint": {
+        "fill-color": "#FFF",
+        "fill-opacity": 0
+      },
+      "source": "maptiler_planet",
+      "source-layer": "landuse",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "any",
+        [
+          "==",
+          "class",
+          "industrial"
+        ],
+        [
+          "==",
+          "class",
+          "commercial"
+        ],
+        [
+          "==",
+          "class",
+          "retail"
+        ],
+        [
+          "==",
+          "class",
+          "stadium"
+        ],
+        [
+          "==",
+          "class",
+          "college"
+        ],
+        [
+          "==",
+          "class",
+          "university"
+        ],
+        [
+          "==",
+          "class",
+          "school"
+        ]
+      ],
+      "id": "landuse_industrial_school",
+      "layout": {
+        "visibility": "visible"
+      },
+      "maxzoom": 22,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "fill-color": "#FFF",
+        "fill-opacity": 0
+      },
+      "source": "maptiler_planet",
+      "source-layer": "landuse",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "==",
+        "class",
+        "cemetery"
+      ],
+      "id": "landuse_cemetery",
+      "layout": {
+        "visibility": "visible"
+      },
+      "maxzoom": 22,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "fill-color": "#14e64f",
+        "fill-opacity": 1
+      },
+      "source": "maptiler_planet",
+      "source-layer": "landuse",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "==",
+        "class",
+        "hospital"
+      ],
+      "id": "landuse_hospital",
+      "layout": {
+        "visibility": "visible"
+      },
+      "maxzoom": 22,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "fill-color": "#FFF",
+        "fill-opacity": 0
+      },
+      "source": "maptiler_planet",
+      "source-layer": "landuse",
+      "type": "fill"
+    },
+    {
+      "id": "hillshade",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "hillshade-exaggeration": 0.6,
+        "hillshade-shadow-color": "#FFF"
+      },
+      "source": "terrain-rgb",
+      "type": "hillshade"
+    },
+    {
+      "id": "parks",
+      "layout": {
+        "visibility": "visible"
+      },
+      "minzoom": 8,
+      "paint": {
+        "fill-antialias": true,
+        "fill-color": "#14e64f",
+        "fill-outline-color": "#14e64f"
+      },
+      "source": "maptiler_planet",
+      "source-layer": "park",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ]
+      ],
+      "id": "waterway_tunnel",
+      "layout": {
+        "line-cap": "round",
+        "visibility": "visible"
+      },
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#75cff0",
+        "line-width": {
+          "base": 1.3,
+          "stops": [
+            [
+              13,
+              0.5
+            ],
+            [
+              20,
+              6
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "waterway",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "river"
+        ],
+        [
+          "!=",
+          "brunnel",
+          "tunnel"
+        ],
+        [
+          "!=",
+          "intermittent",
+          1
+        ]
+      ],
+      "id": "waterway_river",
+      "layout": {
+        "line-cap": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#75cff0",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              1
+            ],
+            [
+              20,
+              18
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "waterway",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "river"
+        ],
+        [
+          "!=",
+          "brunnel",
+          "tunnel"
+        ],
+        [
+          "==",
+          "intermittent",
+          1
+        ]
+      ],
+      "id": "waterway_river_intermittent",
+      "layout": {
+        "line-cap": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#75cff0",
+        "line-dasharray": [
+          2,
+          1.6
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              1
+            ],
+            [
+              20,
+              18
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "waterway",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "!=",
+          "class",
+          "river"
+        ],
+        [
+          "!=",
+          "brunnel",
+          "tunnel"
+        ],
+        [
+          "!=",
+          "intermittent",
+          1
+        ]
+      ],
+      "id": "waterway_other",
+      "layout": {
+        "line-cap": "butt",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#75cff0",
+        "line-width": {
+          "base": 1.3,
+          "stops": [
+            [
+              13,
+              0.5
+            ],
+            [
+              20,
+              12
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "waterway",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "!=",
+          "class",
+          "river"
+        ],
+        [
+          "!=",
+          "brunnel",
+          "tunnel"
+        ],
+        [
+          "==",
+          "intermittent",
+          1
+        ]
+      ],
+      "id": "waterway_other_intermittent",
+      "layout": {
+        "line-cap": "butt",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#75cff0",
+        "line-dasharray": [
+          4,
+          3
+        ],
+        "line-width": {
+          "base": 1.3,
+          "stops": [
+            [
+              13,
+              0.5
+            ],
+            [
+              20,
+              12
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "waterway",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "!=",
+          "intermittent",
+          1
+        ]
+      ],
+      "id": "water",
+      "layout": {
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "fill-color": "#75cff0",
+        "fill-outline-color": "#75cff0"
+      },
+      "source": "maptiler_planet",
+      "source-layer": "water",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "intermittent",
+          1
+        ]
+      ],
+      "id": "water_intermittent",
+      "layout": {
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "fill-color": "#75cff0",
+        "fill-opacity": 1
+      },
+      "source": "maptiler_planet",
+      "source-layer": "water",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "==",
+        "$type",
+        "Polygon"
+      ],
+      "id": "aeroway_fill",
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "fill-color": "#e68714",
+        "fill-opacity": 1
+      },
+      "source": "maptiler_planet",
+      "source-layer": "aeroway",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "==",
+          "class",
+          "runway"
+        ]
+      ],
+      "id": "aeroway_runway",
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              3
+            ],
+            [
+              20,
+              16
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "aeroway",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "==",
+          "class",
+          "taxiway"
+        ]
+      ],
+      "id": "aeroway_taxiway",
+      "metadata": {},
+      "minzoom": 11,
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              11,
+              0.5
+            ],
+            [
+              20,
+              6
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "aeroway",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "motorway"
+        ],
+        [
+          "==",
+          "ramp",
+          1
+        ],
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ]
+      ],
+      "id": "tunnel_motorway_link_casing",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-dasharray": [
+          0.5,
+          0.25
+        ],
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              1
+            ],
+            [
+              13,
+              3
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              20,
+              15
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "service",
+          "track"
+        ]
+      ],
+      "id": "tunnel_service_track_casing",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 15,
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              15,
+              1
+            ],
+            [
+              16,
+              4
+            ],
+            [
+              20,
+              11
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "ramp",
+          "1"
+        ],
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ]
+      ],
+      "id": "tunnel_link_casing",
+      "layout": {
+        "line-join": "round"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              1
+            ],
+            [
+              13,
+              3
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              20,
+              15
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "street",
+          "street_limited"
+        ]
+      ],
+      "id": "tunnel_street_casing",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": {
+          "stops": [
+            [
+              12,
+              0
+            ],
+            [
+              12.5,
+              1
+            ]
+          ]
+        },
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              0.5
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              20,
+              15
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "secondary",
+          "tertiary"
+        ]
+      ],
+      "id": "tunnel_secondary_tertiary_casing",
+      "layout": {
+        "line-join": "round"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              8,
+              1.5
+            ],
+            [
+              20,
+              21
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "primary",
+          "trunk"
+        ]
+      ],
+      "id": "tunnel_trunk_primary_casing",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              0.4
+            ],
+            [
+              6,
+              0.7
+            ],
+            [
+              7,
+              1.75
+            ],
+            [
+              20,
+              22
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "motorway"
+        ],
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ]
+      ],
+      "id": "tunnel_motorway_casing",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-dasharray": [
+          0.5,
+          0.25
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              0.4
+            ],
+            [
+              6,
+              0.7
+            ],
+            [
+              7,
+              1.75
+            ],
+            [
+              20,
+              22
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "path",
+          "pedestrian"
+        ]
+      ],
+      "id": "tunnel_path_pedestrian",
+      "metadata": {},
+      "minzoom": 15,
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              14,
+              0.5
+            ],
+            [
+              20,
+              10
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "motorway_link"
+        ],
+        [
+          "==",
+          "ramp",
+          1
+        ],
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ]
+      ],
+      "id": "tunnel_motorway_link",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12.5,
+              0
+            ],
+            [
+              13,
+              1.5
+            ],
+            [
+              14,
+              2.5
+            ],
+            [
+              20,
+              11.5
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "service",
+          "track"
+        ]
+      ],
+      "id": "tunnel_service_track",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              15.5,
+              0
+            ],
+            [
+              16,
+              2
+            ],
+            [
+              20,
+              7.5
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "ramp",
+          "1"
+        ],
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ]
+      ],
+      "id": "tunnel_link",
+      "layout": {
+        "line-join": "round"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12.5,
+              0
+            ],
+            [
+              13,
+              1.5
+            ],
+            [
+              14,
+              2.5
+            ],
+            [
+              20,
+              11.5
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "minor"
+        ]
+      ],
+      "id": "tunnel_minor",
+      "layout": {
+        "line-join": "round"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              13.5,
+              0
+            ],
+            [
+              14,
+              2.5
+            ],
+            [
+              20,
+              11.5
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "secondary",
+          "tertiary"
+        ]
+      ],
+      "id": "tunnel_secondary_tertiary",
+      "layout": {
+        "line-join": "round"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              6.5,
+              0
+            ],
+            [
+              7,
+              0.5
+            ],
+            [
+              20,
+              12
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "primary",
+          "trunk"
+        ]
+      ],
+      "id": "tunnel_trunk_primary",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              0
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              20,
+              18
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "motorway"
+        ],
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ]
+      ],
+      "id": "tunnel_motorway",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              0
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              20,
+              18
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "any",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "!in",
+          "brunnel",
+          "bridge",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "path",
+          "pedestrian"
+        ]
+      ],
+      "id": "road_path_pedestrian",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 9,
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              13,
+              2
+            ],
+            [
+              16,
+              3
+            ],
+            [
+              20,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ],
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ]
+      ],
+      "id": "road_area_bridge",
+      "layout": {
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "fill-antialias": true,
+        "fill-color": "#000",
+        "fill-opacity": 0,
+        "fill-outline-color": "#000"
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ],
+        [
+          "==",
+          "class",
+          "pier"
+        ]
+      ],
+      "id": "road_area_pier",
+      "layout": {
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "fill-antialias": true,
+        "fill-color": "#000",
+        "fill-translate-anchor": "viewport"
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "class",
+          "pier"
+        ]
+      ],
+      "id": "road_pier",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              15,
+              1
+            ],
+            [
+              17,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "!in",
+          "brunnel",
+          "bridge",
+          "tunnel"
+        ],
+        [
+          "==",
+          "class",
+          "motorway"
+        ],
+        [
+          "==",
+          "ramp",
+          1
+        ]
+      ],
+      "id": "road_motorway_link_casing",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 12,
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              7,
+              2
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              20,
+              22
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "!in",
+          "brunnel",
+          "bridge",
+          "tunnel"
+        ],
+        [
+          "==",
+          "ramp",
+          1
+        ],
+        [
+          "!in",
+          "class",
+          "pedestrian",
+          "path",
+          "track",
+          "service"
+        ]
+      ],
+      "id": "road_link_casing",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 13,
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              1
+            ],
+            [
+              13,
+              3
+            ],
+            [
+              14,
+              6
+            ],
+            [
+              20,
+              23
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "!in",
+          "brunnel",
+          "bridge",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "minor"
+        ],
+        [
+          "!=",
+          "ramp",
+          "1"
+        ]
+      ],
+      "id": "road_minor_casing",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 12,
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": {
+          "stops": [
+            [
+              1,
+              1
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              13,
+              1
+            ]
+          ]
+        },
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              9,
+              1
+            ],
+            [
+              12,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              20,
+              10
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "!in",
+          "brunnel",
+          "bridge",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "secondary",
+          "tertiary"
+        ],
+        [
+          "!=",
+          "ramp",
+          1
+        ]
+      ],
+      "id": "road_secondary_tertiary_casing",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              8,
+              0.5
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              20,
+              21
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "!in",
+          "brunnel",
+          "bridge",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "primary",
+          "trunk"
+        ]
+      ],
+      "id": "road_trunk_primary_casing",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              20,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "!in",
+          "brunnel",
+          "bridge",
+          "tunnel"
+        ],
+        [
+          "==",
+          "class",
+          "motorway"
+        ],
+        [
+          "!=",
+          "ramp",
+          "1"
+        ]
+      ],
+      "id": "road_motorway_casing",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 5,
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              0
+            ],
+            [
+              7,
+              1.4
+            ],
+            [
+              9,
+              4.4
+            ],
+            [
+              20,
+              22
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "all",
+          [
+            "!in",
+            "brunnel",
+            "bridge",
+            "tunnel"
+          ],
+          [
+            "in",
+            "class",
+            "minor"
+          ]
+        ]
+      ],
+      "id": "road_minor",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 12,
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              9,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              14,
+              3
+            ],
+            [
+              20,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "!in",
+          "brunnel",
+          "bridge",
+          "tunnel"
+        ],
+        [
+          "==",
+          "ramp",
+          1
+        ],
+        [
+          "!in",
+          "class",
+          "pedestrian",
+          "path",
+          "track",
+          "service"
+        ]
+      ],
+      "id": "road_link",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 13,
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              0
+            ],
+            [
+              13,
+              1.5
+            ],
+            [
+              14,
+              3
+            ],
+            [
+              20,
+              11.5
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "!in",
+          "brunnel",
+          "bridge",
+          "tunnel"
+        ],
+        [
+          "==",
+          "class",
+          "motorway"
+        ],
+        [
+          "==",
+          "ramp",
+          1
+        ]
+      ],
+      "id": "road_motorway_link",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 5,
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              3
+            ],
+            [
+              12,
+              6
+            ],
+            [
+              14,
+              7
+            ],
+            [
+              20,
+              19
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "!in",
+          "brunnel",
+          "bridge",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "secondary",
+          "tertiary"
+        ]
+      ],
+      "id": "road_secondary_tertiary",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              1,
+              17
+            ],
+            [
+              6.5,
+              0
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              21,
+              17
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "!in",
+          "brunnel",
+          "bridge",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "primary",
+          "trunk"
+        ]
+      ],
+      "id": "road_trunk_primary",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              20,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "!in",
+          "brunnel",
+          "bridge",
+          "tunnel"
+        ],
+        [
+          "==",
+          "class",
+          "motorway"
+        ],
+        [
+          "!=",
+          "ramp",
+          1
+        ]
+      ],
+      "id": "road_motorway",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 5,
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              20,
+              18
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "!in",
+          "brunnel",
+          "bridge",
+          "tunnel"
+        ],
+        [
+          "==",
+          "class",
+          "rail"
+        ]
+      ],
+      "id": "road_major_rail",
+      "layout": {
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 12,
+      "paint": {
+        "line-color": "#8f530a",
+        "line-width": {
+          "base": 1.4,
+          "stops": [
+            [
+              12,
+              1
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              20,
+              6
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "!in",
+          "brunnel",
+          "bridge",
+          "tunnel"
+        ],
+        [
+          "==",
+          "class",
+          "rail"
+        ]
+      ],
+      "id": "road_major_rail_hatching",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 12,
+      "paint": {
+        "line-color": "#8f530a",
+        "line-width": {
+          "base": 1.4,
+          "stops": [
+            [
+              12.5,
+              1
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              20,
+              6
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "motorway_link"
+        ],
+        [
+          "==",
+          "ramp",
+          1
+        ],
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ]
+      ],
+      "id": "bridge_motorway_link_casing",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              1
+            ],
+            [
+              13,
+              3
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              20,
+              15
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "service",
+          "track"
+        ]
+      ],
+      "id": "bridge_service_track_casing",
+      "layout": {
+        "line-join": "round"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              0
+            ],
+            [
+              15,
+              0
+            ],
+            [
+              16,
+              4
+            ],
+            [
+              20,
+              11
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "link"
+        ],
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ]
+      ],
+      "id": "bridge_link_casing",
+      "layout": {
+        "line-join": "round"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              1
+            ],
+            [
+              13,
+              3
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              20,
+              15
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "street",
+          "street_limited"
+        ]
+      ],
+      "id": "bridge_street_casing",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": {
+          "stops": [
+            [
+              12,
+              0
+            ],
+            [
+              12.5,
+              1
+            ]
+          ]
+        },
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12,
+              0.5
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              20,
+              25
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "path",
+          "pedestrian"
+        ]
+      ],
+      "id": "bridge_path_pedestrian_casing",
+      "layout": {
+        "line-join": "miter",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-dasharray": [
+          1,
+          0
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              14,
+              1.5
+            ],
+            [
+              20,
+              6
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "secondary",
+          "tertiary"
+        ]
+      ],
+      "id": "bridge_secondary_tertiary_casing",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              8,
+              1.5
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              20,
+              21
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "primary",
+          "trunk"
+        ]
+      ],
+      "id": "bridge_trunk_primary_casing",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              22
+            ],
+            [
+              5,
+              0.4
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              21,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "motorway"
+        ],
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ]
+      ],
+      "id": "bridge_motorway_casing",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              0.4
+            ],
+            [
+              6,
+              0.7
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              14,
+              8
+            ],
+            [
+              20,
+              23
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "path",
+          "pedestrian"
+        ]
+      ],
+      "id": "bridge_path_pedestrian",
+      "layout": {
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-dasharray": [
+          1,
+          0.3
+        ],
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              14,
+              0.5
+            ],
+            [
+              20,
+              4
+            ],
+            [
+              21,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "motorway_link"
+        ],
+        [
+          "==",
+          "ramp",
+          1
+        ],
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ]
+      ],
+      "id": "bridge_motorway_link",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12.5,
+              0
+            ],
+            [
+              13,
+              1.5
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              20,
+              11.5
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "service",
+          "track"
+        ]
+      ],
+      "id": "bridge_service_track",
+      "layout": {
+        "line-join": "round"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              15.5,
+              0
+            ],
+            [
+              16,
+              2
+            ],
+            [
+              20,
+              7.5
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "link"
+        ],
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ]
+      ],
+      "id": "bridge_link",
+      "layout": {
+        "line-join": "round"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              12.5,
+              0
+            ],
+            [
+              13,
+              1.5
+            ],
+            [
+              14,
+              2.5
+            ],
+            [
+              20,
+              11.5
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "minor"
+        ]
+      ],
+      "id": "bridge_street",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              13.5,
+              0
+            ],
+            [
+              14,
+              2.5
+            ],
+            [
+              20,
+              18
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "secondary",
+          "tertiary"
+        ]
+      ],
+      "id": "bridge_secondary_tertiary",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              6.5,
+              0
+            ],
+            [
+              7,
+              0.5
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              20,
+              12
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ],
+        [
+          "in",
+          "class",
+          "primary",
+          "trunk"
+        ]
+      ],
+      "id": "bridge_trunk_primary",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              5,
+              0
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              20,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "motorway"
+        ],
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ]
+      ],
+      "id": "bridge_motorway",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1.2,
+          "stops": [
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              3
+            ],
+            [
+              12,
+              6
+            ],
+            [
+              14,
+              7
+            ],
+            [
+              20,
+              19
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "rail"
+        ],
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ]
+      ],
+      "id": "bridge_major_rail",
+      "metadata": {},
+      "minzoom": 12,
+      "paint": {
+        "line-color": "#8f530a",
+        "line-width": {
+          "base": 1.4,
+          "stops": [
+            [
+              12,
+              1
+            ],
+            [
+              15,
+              2
+            ],
+            [
+              20,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "rail"
+        ],
+        [
+          "==",
+          "brunnel",
+          "bridge"
+        ]
+      ],
+      "id": "bridge_major_rail_hatching",
+      "metadata": {},
+      "minzoom": 12,
+      "paint": {
+        "line-color": "#8f530a",
+        "line-dasharray": [
+          0.2,
+          8
+        ],
+        "line-width": {
+          "base": 1.4,
+          "stops": [
+            [
+              14.5,
+              1
+            ],
+            [
+              15,
+              2
+            ],
+            [
+              20,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "admin_level",
+          3,
+          4
+        ],
+        [
+          "==",
+          "maritime",
+          0
+        ]
+      ],
+      "id": "boundary_3",
+      "layout": {
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              12,
+              1.8
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "boundary",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "admin_level",
+          2
+        ],
+        [
+          "==",
+          "maritime",
+          0
+        ]
+      ],
+      "id": "boundary_2",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1.2
+            ],
+            [
+              12,
+              3
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "boundary",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "yellow"
+        ]
+      ],
+      "id": "trail_yellow_casing_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 16,
+      "metadata": {},
+      "minzoom": 13,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              1
+            ],
+            [
+              13,
+              2
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "yellow"
+        ],
+        [
+          "!in",
+          "symbol",
+          "yellow:white:yellow_corner",
+          "yellow:white:yellow_circle",
+          "yellow:white:yellow_backslash"
+        ]
+      ],
+      "id": "trail_yellow_casing_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              1.5
+            ],
+            [
+              14,
+              2.2
+            ],
+            [
+              18,
+              2.8
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 4
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          ":yellow:::H6:white",
+          ":yellow:black_pointer",
+          ":yellow:blue_bar",
+          ":yellow:blue_pointer",
+          ":yellow:green_pointer",
+          ":yellow_round:",
+          "GH",
+          "white::yellow_bar",
+          "white::yellow_x"
+        ]
+      ],
+      "id": "trail_yellow_casing_extra_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              2
+            ],
+            [
+              13,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "yellow"
+        ]
+      ],
+      "id": "trail_yellow_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 18,
+      "metadata": {},
+      "minzoom": 13,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.7
+            ],
+            [
+              14,
+              1.7
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "yellow"
+        ],
+        [
+          "!in",
+          "symbol",
+          "yellow:white:yellow_corner",
+          "yellow:white:yellow_circle",
+          "yellow:white:yellow_backslash"
+        ]
+      ],
+      "id": "trail_yellow_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              1.5
+            ],
+            [
+              14,
+              2.2
+            ],
+            [
+              18,
+              2.8
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          ":yellow:::H6:white",
+          ":yellow:black_pointer",
+          ":yellow:blue_bar",
+          ":yellow:blue_pointer",
+          ":yellow:green_pointer",
+          ":yellow_round:",
+          "GH",
+          "white::yellow_bar",
+          "white::yellow_x"
+        ]
+      ],
+      "id": "trail_yellow_extra_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.7
+            ],
+            [
+              14,
+              1.7
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          ":yellow:::H6:white",
+          ":yellow:black_pointer",
+          ":yellow:blue_bar",
+          ":yellow:blue_pointer",
+          ":yellow:green_pointer",
+          ":yellow_round:",
+          "GH",
+          "white::yellow_bar",
+          "white::yellow_x"
+        ]
+      ],
+      "id": "trail_yellow_extra_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              1.5
+            ],
+            [
+              14,
+              2.2
+            ],
+            [
+              18,
+              2.8
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "green"
+        ]
+      ],
+      "id": "trail_green_casing_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              2.2
+            ],
+            [
+              14,
+              4.4
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "green"
+        ],
+        [
+          "!in",
+          "symbol",
+          "green:white:green_corner",
+          "green:white:green_circle",
+          "green:white:green_backslash"
+        ]
+      ],
+      "id": "trail_green_casing_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              -1.5
+            ],
+            [
+              14,
+              -2.2
+            ],
+            [
+              18,
+              -2.8
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 4.4
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "#8EBE5F:#8EBE5F:#8EBE5F:R3:black",
+          ":green:",
+          ":green:::H7:white"
+        ]
+      ],
+      "id": "trail_green_casing_extra_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              2
+            ],
+            [
+              14,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "#8EBE5F:#8EBE5F:#8EBE5F:R3:black",
+          ":green:",
+          ":green:::H7:white"
+        ]
+      ],
+      "id": "trail_green_casing_extra_14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              -1.5
+            ],
+            [
+              14,
+              -2.2
+            ],
+            [
+              18,
+              -2.8
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 4
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "green"
+        ]
+      ],
+      "id": "trail_green_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.8
+            ],
+            [
+              13,
+              1.9
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "green"
+        ],
+        [
+          "!in",
+          "symbol",
+          "green:white:green_corner",
+          "green:white:green_circle",
+          "green:white:green_backslash"
+        ]
+      ],
+      "id": "trail_green_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              -1.5
+            ],
+            [
+              14,
+              -2.2
+            ],
+            [
+              18,
+              -2.8
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2.2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "#8EBE5F:#8EBE5F:#8EBE5F:R3:black",
+          ":green:",
+          ":green:::H7:white"
+        ]
+      ],
+      "id": "trail_green_extra_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.9
+            ],
+            [
+              13,
+              1.8
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "#8EBE5F:#8EBE5F:#8EBE5F:R3:black",
+          ":green:",
+          ":green:::H7:white"
+        ]
+      ],
+      "id": "trail_green_extra_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              -1.5
+            ],
+            [
+              14,
+              -2.2
+            ],
+            [
+              18,
+              -2.8
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2.2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "blue"
+        ]
+      ],
+      "id": "trail_blue_casing_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 15,
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              2
+            ],
+            [
+              14,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "blue"
+        ],
+        [
+          "!in",
+          "symbol",
+          "blue:white:blue_corner",
+          "blue:white:blue_circle",
+          "blue:white:blue_backslash"
+        ]
+      ],
+      "id": "trail_blue_casing_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              0
+            ],
+            [
+              14,
+              0.5
+            ],
+            [
+              18,
+              1
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 4
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "#40E0D0",
+          ":blue:::H4:white",
+          "blu:blu:white_bar :F7:black",
+          "blu:blu:white_bar :IT37:black",
+          "blu:blue:yellow_bar:2:black",
+          "darkblue:white:darkblue_stripe",
+          "light_blu:light_blu::1:white",
+          "light_blue:white:blue_triangle",
+          "white::blue_bar",
+          "white::blue_dot"
+        ]
+      ],
+      "id": "trail_blue_casing_extra_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              2
+            ],
+            [
+              14,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "#40E0D0",
+          ":blue:::H4:white",
+          "blu:blu:white_bar :F7:black",
+          "blu:blu:white_bar :IT37:black",
+          "blu:blue:yellow_bar:2:black",
+          "darkblue:white:darkblue_stripe",
+          "light_blu:light_blu::1:white",
+          "light_blue:white:blue_triangle",
+          "white::blue_bar",
+          "white::blue_dot"
+        ]
+      ],
+      "id": "trail_blue_casing_extra_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              2
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              18,
+              5.6
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 4
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "blue"
+        ]
+      ],
+      "id": "trail_blue_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 15,
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.7
+            ],
+            [
+              14,
+              1.7
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "blue"
+        ],
+        [
+          "!in",
+          "symbol",
+          "blue:white:blue_corner",
+          "blue:white:blue_circle",
+          "blue:white:blue_backslash"
+        ]
+      ],
+      "id": "trail_blue_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              0
+            ],
+            [
+              14,
+              0.5
+            ],
+            [
+              18,
+              1
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "#40E0D0",
+          ":blue:::H4:white",
+          "blu:blu:white_bar :F7:black",
+          "blu:blu:white_bar :IT37:black",
+          "blu:blue:yellow_bar:2:black",
+          "darkblue:white:darkblue_stripe",
+          "light_blu:light_blu::1:white",
+          "light_blue:white:blue_triangle",
+          "white::blue_bar",
+          "white::blue_dot"
+        ]
+      ],
+      "id": "trail_blue_extra_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.7
+            ],
+            [
+              14,
+              1.7
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "#40E0D0",
+          ":blue:::H4:white",
+          "blu:blu:white_bar :F7:black",
+          "blu:blu:white_bar :IT37:black",
+          "blu:blue:yellow_bar:2:black",
+          "darkblue:white:darkblue_stripe",
+          "light_blu:light_blu::1:white",
+          "light_blue:white:blue_triangle",
+          "white::blue_bar",
+          "white::blue_dot"
+        ]
+      ],
+      "id": "trail_blue_extra_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              2
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              18,
+              5.6
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "brown"
+        ]
+      ],
+      "id": "trail_brown_casing_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              2
+            ],
+            [
+              14,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "brown"
+        ]
+      ],
+      "id": "trail_brown_casing_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              -2
+            ],
+            [
+              14,
+              -4
+            ],
+            [
+              18,
+              -5.6
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 4
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          ":brown::Klangweg:white",
+          "white::brown_hiker"
+        ]
+      ],
+      "id": "trail_brown_casing_extra_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              2
+            ],
+            [
+              14,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          ":brown::Klangweg:white",
+          "white::brown_hiker"
+        ]
+      ],
+      "id": "trail_brown_casing_extra_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              -2
+            ],
+            [
+              14,
+              -4
+            ],
+            [
+              18,
+              -5.6
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 4
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "brown"
+        ]
+      ],
+      "id": "trail_brown_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.7
+            ],
+            [
+              14,
+              1.7
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "brown"
+        ]
+      ],
+      "id": "trail_brown_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              -2
+            ],
+            [
+              14,
+              -4
+            ],
+            [
+              18,
+              -5.6
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          ":brown::Klangweg:white",
+          "white::brown_hiker"
+        ]
+      ],
+      "id": "trail_brown_extra_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.7
+            ],
+            [
+              14,
+              1.7
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          ":brown::Klangweg:white",
+          "white::brown_hiker"
+        ]
+      ],
+      "id": "trail_brown_extra_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              -2
+            ],
+            [
+              14,
+              -4
+            ],
+            [
+              18,
+              -5.6
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          ":::VO:white",
+          ":white:::H3:white",
+          "aqua:aqua:white_bar:PLB:black",
+          "black",
+          "black::ammonit",
+          "black::black_cross",
+          "black::black_dot",
+          "black::white_dot",
+          "black:white: :1:black",
+          "black:white: :2:black",
+          "black:white: :3:black",
+          "black:white: :4:black",
+          "black:white: :5:black",
+          "black:white: :6:black",
+          "black:white:10:black",
+          "black:white:37:black",
+          "black:white:::H:black",
+          "black:white:::STW:black",
+          "black:white:::T:black",
+          "black:white:::WDS:black",
+          "black:white::DW:blue",
+          "black:white::HZW",
+          "black:white::ITH:black",
+          "black:white::KKS:black",
+          "black:white::Max:black",
+          "black:white::RW:black",
+          "black:white::SGH:black",
+          "black:white::T:black",
+          "black:white::VDzD:black",
+          "black:white::Wi:black",
+          "black:white:AW:black",
+          "black:white:BgD:black",
+          "black:white:GRS:black",
+          "black:white:Glw:black",
+          "black:white:LES:black",
+          "black:white:W11:black",
+          "black:white:ammonit",
+          "black:white:black_cross",
+          "black:white:black_dot",
+          "black:white:black_dot::WHW:black",
+          "black:white:black_frame:GT:black",
+          "black:white:black_rectangle",
+          "black:white:hiker",
+          "black:white:nordic_walking",
+          "black:white:tower",
+          "black:white:white:1:black",
+          "black:white:white:2:black",
+          "black:white:white:3:black",
+          "black:white_circle: :1:white",
+          "black:white_circle: :2:white",
+          "black:white_circle: :3:white",
+          "black:white_round:blue_circle",
+          "gray:black_circle:black_triangle",
+          "gray:white",
+          "white",
+          "white::white_diamond",
+          "white::white_dot",
+          "white::white_pointer",
+          "white:hiker",
+          "white:tower:black",
+          "white:white::8",
+          "white:white::8:black",
+          "white:white::C1:black",
+          "white:white::D:red",
+          "white:white::N:blue",
+          "white:white::R1:red",
+          "white:white:GWW:black",
+          "white:white:L17:red",
+          "white:white:L18:red",
+          "white:white:L19:red",
+          "white:white:W11:blue",
+          "white:white:W12:blue",
+          "white:white:black_dot",
+          "white:white:black_pointer",
+          "white:white:hiker",
+          "white:white:hiker:black",
+          "white:white:hiker:black::",
+          "white:white_round::W:black"
+        ]
+      ],
+      "id": "trail_black_casing_extra_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              2
+            ],
+            [
+              14,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          ":::VO:white",
+          ":white:::H3:white",
+          "aqua:aqua:white_bar:PLB:black",
+          "black",
+          "black::ammonit",
+          "black::black_cross",
+          "black::black_dot",
+          "black::white_dot",
+          "black:white: :1:black",
+          "black:white: :2:black",
+          "black:white: :3:black",
+          "black:white: :4:black",
+          "black:white: :5:black",
+          "black:white: :6:black",
+          "black:white:10:black",
+          "black:white:37:black",
+          "black:white:::H:black",
+          "black:white:::STW:black",
+          "black:white:::T:black",
+          "black:white:::WDS:black",
+          "black:white::DW:blue",
+          "black:white::HZW",
+          "black:white::ITH:black",
+          "black:white::KKS:black",
+          "black:white::Max:black",
+          "black:white::RW:black",
+          "black:white::SGH:black",
+          "black:white::T:black",
+          "black:white::VDzD:black",
+          "black:white::Wi:black",
+          "black:white:AW:black",
+          "black:white:BgD:black",
+          "black:white:GRS:black",
+          "black:white:Glw:black",
+          "black:white:LES:black",
+          "black:white:W11:black",
+          "black:white:ammonit",
+          "black:white:black_cross",
+          "black:white:black_dot",
+          "black:white:black_dot::WHW:black",
+          "black:white:black_frame:GT:black",
+          "black:white:black_rectangle",
+          "black:white:hiker",
+          "black:white:nordic_walking",
+          "black:white:tower",
+          "black:white:white:1:black",
+          "black:white:white:2:black",
+          "black:white:white:3:black",
+          "black:white_circle: :1:white",
+          "black:white_circle: :2:white",
+          "black:white_circle: :3:white",
+          "black:white_round:blue_circle",
+          "gray:black_circle:black_triangle",
+          "gray:white",
+          "white",
+          "white::white_diamond",
+          "white::white_dot",
+          "white::white_pointer",
+          "white:hiker",
+          "white:tower:black",
+          "white:white::8",
+          "white:white::8:black",
+          "white:white::C1:black",
+          "white:white::D:red",
+          "white:white::N:blue",
+          "white:white::R1:red",
+          "white:white:GWW:black",
+          "white:white:L17:red",
+          "white:white:L18:red",
+          "white:white:L19:red",
+          "white:white:W11:blue",
+          "white:white:W12:blue",
+          "white:white:black_dot",
+          "white:white:black_pointer",
+          "white:white:hiker",
+          "white:white:hiker:black",
+          "white:white:hiker:black::",
+          "white:white_round::W:black"
+        ]
+      ],
+      "id": "trail_black_casing_extra_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              -2.3
+            ],
+            [
+              14,
+              -4.3
+            ],
+            [
+              18,
+              -6
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 4
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "black"
+        ]
+      ],
+      "id": "trail_black_casing_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              2
+            ],
+            [
+              14,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "black"
+        ]
+      ],
+      "id": "trail_black_casing_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              -2.3
+            ],
+            [
+              14,
+              -4.3
+            ],
+            [
+              18,
+              -6
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 4
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "black"
+        ]
+      ],
+      "id": "trail_black_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.7
+            ],
+            [
+              14,
+              1.7
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "black"
+        ]
+      ],
+      "id": "trail_black_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              -2.3
+            ],
+            [
+              14,
+              -4.3
+            ],
+            [
+              18,
+              -6
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          ":::VO:white",
+          ":white:::H3:white",
+          "aqua:aqua:white_bar:PLB:black",
+          "black",
+          "black::ammonit",
+          "black::black_cross",
+          "black::black_dot",
+          "black::white_dot",
+          "black:white: :1:black",
+          "black:white: :2:black",
+          "black:white: :3:black",
+          "black:white: :4:black",
+          "black:white: :5:black",
+          "black:white: :6:black",
+          "black:white:10:black",
+          "black:white:37:black",
+          "black:white:::H:black",
+          "black:white:::STW:black",
+          "black:white:::T:black",
+          "black:white:::WDS:black",
+          "black:white::DW:blue",
+          "black:white::HZW",
+          "black:white::ITH:black",
+          "black:white::KKS:black",
+          "black:white::Max:black",
+          "black:white::RW:black",
+          "black:white::SGH:black",
+          "black:white::T:black",
+          "black:white::VDzD:black",
+          "black:white::Wi:black",
+          "black:white:AW:black",
+          "black:white:BgD:black",
+          "black:white:GRS:black",
+          "black:white:Glw:black",
+          "black:white:LES:black",
+          "black:white:W11:black",
+          "black:white:ammonit",
+          "black:white:black_cross",
+          "black:white:black_dot",
+          "black:white:black_dot::WHW:black",
+          "black:white:black_frame:GT:black",
+          "black:white:black_rectangle",
+          "black:white:hiker",
+          "black:white:nordic_walking",
+          "black:white:tower",
+          "black:white:white:1:black",
+          "black:white:white:2:black",
+          "black:white:white:3:black",
+          "black:white_circle: :1:white",
+          "black:white_circle: :2:white",
+          "black:white_circle: :3:white",
+          "black:white_round:blue_circle",
+          "gray:black_circle:black_triangle",
+          "gray:white",
+          "white",
+          "white::white_diamond",
+          "white::white_dot",
+          "white::white_pointer",
+          "white:hiker",
+          "white:tower:black",
+          "white:white::8",
+          "white:white::8:black",
+          "white:white::C1:black",
+          "white:white::D:red",
+          "white:white::N:blue",
+          "white:white::R1:red",
+          "white:white:GWW:black",
+          "white:white:L17:red",
+          "white:white:L18:red",
+          "white:white:L19:red",
+          "white:white:W11:blue",
+          "white:white:W12:blue",
+          "white:white:black_dot",
+          "white:white:black_pointer",
+          "white:white:hiker",
+          "white:white:hiker:black",
+          "white:white:hiker:black::",
+          "white:white_round::W:black"
+        ]
+      ],
+      "id": "trail_black_extra_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.7
+            ],
+            [
+              14,
+              1.7
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          ":::VO:white",
+          ":white:::H3:white",
+          "aqua:aqua:white_bar:PLB:black",
+          "black",
+          "black::ammonit",
+          "black::black_cross",
+          "black::black_dot",
+          "black::white_dot",
+          "black:white: :1:black",
+          "black:white: :2:black",
+          "black:white: :3:black",
+          "black:white: :4:black",
+          "black:white: :5:black",
+          "black:white: :6:black",
+          "black:white:10:black",
+          "black:white:37:black",
+          "black:white:::H:black",
+          "black:white:::STW:black",
+          "black:white:::T:black",
+          "black:white:::WDS:black",
+          "black:white::DW:blue",
+          "black:white::HZW",
+          "black:white::ITH:black",
+          "black:white::KKS:black",
+          "black:white::Max:black",
+          "black:white::RW:black",
+          "black:white::SGH:black",
+          "black:white::T:black",
+          "black:white::VDzD:black",
+          "black:white::Wi:black",
+          "black:white:AW:black",
+          "black:white:BgD:black",
+          "black:white:GRS:black",
+          "black:white:Glw:black",
+          "black:white:LES:black",
+          "black:white:W11:black",
+          "black:white:ammonit",
+          "black:white:black_cross",
+          "black:white:black_dot",
+          "black:white:black_dot::WHW:black",
+          "black:white:black_frame:GT:black",
+          "black:white:black_rectangle",
+          "black:white:hiker",
+          "black:white:nordic_walking",
+          "black:white:tower",
+          "black:white:white:1:black",
+          "black:white:white:2:black",
+          "black:white:white:3:black",
+          "black:white_circle: :1:white",
+          "black:white_circle: :2:white",
+          "black:white_circle: :3:white",
+          "black:white_round:blue_circle",
+          "gray:black_circle:black_triangle",
+          "gray:white",
+          "white",
+          "white::white_diamond",
+          "white::white_dot",
+          "white::white_pointer",
+          "white:hiker",
+          "white:tower:black",
+          "white:white::8",
+          "white:white::8:black",
+          "white:white::C1:black",
+          "white:white::D:red",
+          "white:white::N:blue",
+          "white:white::R1:red",
+          "white:white:GWW:black",
+          "white:white:L17:red",
+          "white:white:L18:red",
+          "white:white:L19:red",
+          "white:white:W11:blue",
+          "white:white:W12:blue",
+          "white:white:black_dot",
+          "white:white:black_pointer",
+          "white:white:hiker",
+          "white:white:hiker:black",
+          "white:white:hiker:black::",
+          "white:white_round::W:black"
+        ]
+      ],
+      "id": "trail_black_extra_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              -2.3
+            ],
+            [
+              14,
+              -4.3
+            ],
+            [
+              18,
+              -6
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "purple"
+        ]
+      ],
+      "id": "trail_purple_casing_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              2
+            ],
+            [
+              14,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "purple"
+        ]
+      ],
+      "id": "trail_purple_casing_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              2.3
+            ],
+            [
+              14,
+              4.3
+            ],
+            [
+              18,
+              6
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 4
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "#E8ADAA",
+          ":purple:::H2:white"
+        ]
+      ],
+      "id": "trail_purple_casing_extra_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              2
+            ],
+            [
+              14,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "#E8ADAA",
+          ":purple:::H2:white"
+        ]
+      ],
+      "id": "trail_purple_casing_extra_14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              2.3
+            ],
+            [
+              14,
+              4.3
+            ],
+            [
+              18,
+              6
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 4
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "purple"
+        ]
+      ],
+      "id": "trail_purple_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.7
+            ],
+            [
+              14,
+              1.7
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "purple"
+        ]
+      ],
+      "id": "trail_purple_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              2.3
+            ],
+            [
+              14,
+              4.3
+            ],
+            [
+              18,
+              6
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "#E8ADAA",
+          ":purple:::H2:white"
+        ]
+      ],
+      "id": "trail_purple_extra_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.7
+            ],
+            [
+              14,
+              1.7
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "#E8ADAA",
+          ":purple:::H2:white"
+        ]
+      ],
+      "id": "trail_purple_extra_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              2.3
+            ],
+            [
+              14,
+              4.3
+            ],
+            [
+              18,
+              6
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "orange"
+        ]
+      ],
+      "id": "trail_orange_casing_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              2
+            ],
+            [
+              14,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "orange"
+        ]
+      ],
+      "id": "trail_orange_casing_14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              3
+            ],
+            [
+              14,
+              5
+            ],
+            [
+              18,
+              7
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 4
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          ":orange:::H5:white",
+          ":orange:blue_lower:::",
+          ":white:orange_bar:blue_dot::",
+          "white::orange_fork"
+        ]
+      ],
+      "id": "trail_orange_casing_extra_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              2
+            ],
+            [
+              14,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "orange"
+        ]
+      ],
+      "id": "trail_orange_casing_extra_14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              3
+            ],
+            [
+              14,
+              5
+            ],
+            [
+              18,
+              7
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 4
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "orange"
+        ]
+      ],
+      "id": "trail_orange_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.7
+            ],
+            [
+              14,
+              1.7
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "orange"
+        ]
+      ],
+      "id": "trail_orange_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              3
+            ],
+            [
+              14,
+              5
+            ],
+            [
+              18,
+              7
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          ":orange:::H5:white",
+          ":orange:blue_lower:::",
+          ":white:orange_bar:blue_dot::",
+          "white::orange_fork"
+        ]
+      ],
+      "id": "trail_orange_extra_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.7
+            ],
+            [
+              14,
+              1.7
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          ":orange:::H5:white",
+          ":orange:blue_lower:::",
+          ":white:orange_bar:blue_dot::",
+          "white::orange_fork"
+        ]
+      ],
+      "id": "trail_orange_extra_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": {
+          "stops": [
+            [
+              10,
+              3
+            ],
+            [
+              14,
+              5
+            ],
+            [
+              18,
+              7
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "red"
+        ]
+      ],
+      "id": "trail_red_casing_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 24,
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "stops": [
+            [
+              10,
+              0
+            ],
+            [
+              15,
+              0.5
+            ],
+            [
+              21,
+              1
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "red"
+        ]
+      ],
+      "id": "trail_red_casing_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 15,
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": 1,
+        "line-width": {
+          "stops": [
+            [
+              5,
+              0.5
+            ],
+            [
+              14,
+              2
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "class",
+          "foot",
+          "hiking",
+          "wheelchair"
+        ],
+        [
+          "in",
+          "symbol",
+          "none",
+          ""
+        ],
+        [
+          "has",
+          "name"
+        ]
+      ],
+      "id": "trail_red_casing_no_symbol-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0
+            ],
+            [
+              14,
+              1
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "ed:red:white_bar:431:black",
+          "ed:red:white_bar:458:black",
+          ":red:::H1:white",
+          "Giswil - Stalden",
+          "RWW",
+          "Raute mit silbernem Kreuz auf blauem Grund",
+          "Tauplitz Wanderweg 209",
+          "Tschierweg-Alexanderh\u00fctte-Millst\u00e4tter H\u00fctte-Millst\u00e4tter T\u00f6rl- N\u00f6hringsattel-Thomanbauerh\u00fctte-Langnock"
+        ]
+      ],
+      "id": "trail_red_casing_extra",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "none"
+      },
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              2
+            ],
+            [
+              14,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "red"
+        ]
+      ],
+      "id": "trail_red_10-14",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 14,
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.7
+            ],
+            [
+              14,
+              1.7
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "color",
+          "red"
+        ],
+        [
+          "!in",
+          "symbol",
+          "red:white:red_corner",
+          "red:white:red_circle",
+          "red:white:red_backslash"
+        ]
+      ],
+      "id": "trail_red_14-",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "stops": [
+            [
+              6,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              15,
+              3
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "ed:red:white_bar:431:black",
+          "ed:red:white_bar:458:black",
+          ":red:::H1:white",
+          "Giswil - Stalden",
+          "RWW",
+          "Raute mit silbernem Kreuz auf blauem Grund",
+          "Tauplitz Wanderweg 209",
+          "Tschierweg-Alexanderh\u00fctte-Millst\u00e4tter H\u00fctte-Millst\u00e4tter T\u00f6rl- N\u00f6hringsattel-Thomanbauerh\u00fctte-Langnock"
+        ]
+      ],
+      "id": "trail_red_extra",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              1.2
+            ],
+            [
+              14,
+              3
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "class",
+          "foot",
+          "hiking",
+          "wheelchair"
+        ],
+        [
+          "in",
+          "symbol",
+          "none",
+          ""
+        ],
+        [
+          "has",
+          "name"
+        ]
+      ],
+      "id": "trail_red_no_symbol",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0
+            ],
+            [
+              14,
+              1
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "yellow:white:yellow_corner",
+          "yellow:white:yellow_circle"
+        ]
+      ],
+      "id": "trail_yellow_corner",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-dasharray": [
+          2,
+          2
+        ],
+        "line-offset": {
+          "stops": [
+            [
+              13,
+              4.5
+            ],
+            [
+              14,
+              5
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "yellow:white:yellow_backslash"
+        ]
+      ],
+      "id": "trail_yellow_backslash",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-dasharray": [
+          2,
+          2,
+          0.01,
+          2
+        ],
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "green:white:green_corner",
+          "green:white:green_circle"
+        ]
+      ],
+      "id": "trail_green_corner",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-dasharray": [
+          2,
+          2
+        ],
+        "line-offset": {
+          "stops": [
+            [
+              13,
+              2.5
+            ],
+            [
+              14,
+              3
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "green:white:green_backslash"
+        ]
+      ],
+      "id": "trail_green_backslash",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-dasharray": [
+          2,
+          2,
+          0.01,
+          2
+        ],
+        "line-offset": {
+          "stops": [
+            [
+              13,
+              1.5
+            ],
+            [
+              14,
+              2
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "blue:white:blue_corner",
+          "blue:white:blue_circle"
+        ]
+      ],
+      "id": "trail_blue_corner",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-dasharray": [
+          2,
+          2
+        ],
+        "line-offset": {
+          "stops": [
+            [
+              13,
+              -2.5
+            ],
+            [
+              14,
+              -3
+            ]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "blue:white:blue_backslash"
+        ]
+      ],
+      "id": "trail_blue_backslash",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-dasharray": [
+          2,
+          2,
+          0.01,
+          2
+        ],
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "red:white:red_corner",
+          "red:white:red_circle"
+        ]
+      ],
+      "id": "trail_red_corner",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-dasharray": [
+          2,
+          2
+        ],
+        "line-gap-width": 0,
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "in",
+          "symbol",
+          "red:white:red_backslash"
+        ]
+      ],
+      "id": "trail_red_backslash",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 14,
+      "paint": {
+        "line-color": "#000",
+        "line-dasharray": [
+          2,
+          2,
+          0.01,
+          2
+        ],
+        "line-gap-width": 0,
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": 2
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "via_ferrata"
+        ]
+      ],
+      "id": "trail_via_ferrata_casing",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 12,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.7
+            ],
+            [
+              14,
+              1.7
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "via_ferrata"
+        ]
+      ],
+      "id": "trail_via_ferrata",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "metadata": {},
+      "minzoom": 12,
+      "paint": {
+        "line-color": "#000",
+        "line-dasharray": [
+          0.5,
+          2
+        ],
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              1.2
+            ],
+            [
+              14,
+              3
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "via_ferrata"
+        ]
+      ],
+      "id": "trail_via_ferrata_symbol",
+      "layout": {
+        "icon-anchor": "bottom",
+        "symbol-placement": "line",
+        "symbol-spacing": 20,
+        "text-field": ".",
+        "text-font": [
+          "Open Sans Regular",
+          "Roboto Regular"
+        ],
+        "text-size": 18,
+        "visibility": "visible"
+      },
+      "minzoom": 16,
+      "paint": {
+        "text-color": "#000",
+        "text-halo-color": "#000",
+        "text-halo-width": 1
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "symbol"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "ski"
+        ]
+      ],
+      "id": "trail_ski-casing",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              1.4
+            ],
+            [
+              13,
+              3.4
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "ski"
+        ]
+      ],
+      "id": "trail_ski",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#000",
+        "line-dasharray": [
+          1.5,
+          2
+        ],
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              0.7
+            ],
+            [
+              14,
+              1.7
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "bicycle"
+        ]
+      ],
+      "id": "trail_bicycle-casing",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "minzoom": 11,
+      "paint": {
+        "line-color": "#000",
+        "line-offset": 0,
+        "line-opacity": 1,
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              10,
+              1.4
+            ],
+            [
+              14,
+              3.4
+            ],
+            [
+              15,
+              4
+            ]
+          ]
+        }
+      },
+      "source": "outdoor_beta",
+      "source-layer": "trail",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "==",
+        "class",
+        "cable_car"
+      ],
+      "id": "cablecar",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 24,
+      "minzoom": 12,
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              11,
+              3
+            ],
+            [
+              19,
+              5.5
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "==",
+        "class",
+        "cable_car"
+      ],
+      "id": "cablecar-dash",
+      "layout": {
+        "line-cap": "round",
+        "visibility": "visible"
+      },
+      "maxzoom": 24,
+      "minzoom": 12,
+      "paint": {
+        "line-color": "#000",
+        "line-width": {
+          "base": 1,
+          "stops": [
+            [
+              11,
+              2.5
+            ],
+            [
+              19,
+              5
+            ]
+          ]
+        }
+      },
+      "source": "maptiler_planet",
+      "source-layer": "transportation",
+      "type": "line"
+    }
+  ],
+  "light": {
+    "anchor": "viewport"
+  },
+  "metadata": {
+    "mapbox:type": "template",
+    "maptiler:copyright": "This style was generated on MapTiler Cloud. Usage outside of MapTiler Cloud requires valid OpenMapTiles Production Package: https://openmaptiles.com/production-package/ -- please contact us.",
+    "openmaptiles:version": "3.x"
+  },
+  "name": "MM",
+  "pitch": 0,
+  "sources": {
+    "contours": {
+      "type": "vector",
+      "url": "https://api.maptiler.com/tiles/contours/tiles.json?key=uCGQnnA1MXHHz2tIHg1T"
+    },
+    "jp_forest": {
+      "tileSize": 256,
+      "type": "raster",
+      "url": "https://api.maptiler.com/tiles/jp-forest/tiles.json?key=uCGQnnA1MXHHz2tIHg1T"
+    },
+    "jp_gsi_building": {
+      "type": "vector",
+      "url": "https://api.maptiler.com/tiles/jp-gsi-building/tiles.json?key=uCGQnnA1MXHHz2tIHg1T"
+    },
+    "jp_mierune_openmaptiles": {
+      "type": "vector",
+      "url": "https://api.maptiler.com/tiles/jp-mierune/tiles.json?key=uCGQnnA1MXHHz2tIHg1T"
+    },
+    "landcover": {
+      "type": "vector",
+      "url": "https://api.maptiler.com/tiles/landcover/tiles.json?key=uCGQnnA1MXHHz2tIHg1T"
+    },
+    "maptiler_attribution": {
+      "attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+      "type": "vector"
+    },
+    "maptiler_planet": {
+      "type": "vector",
+      "url": "https://api.maptiler.com/tiles/v3/tiles.json?key=uCGQnnA1MXHHz2tIHg1T"
+    },
+    "outdoor": {
+      "type": "vector",
+      "url": "https://api.maptiler.com/tiles/outdoor/tiles.json?key=uCGQnnA1MXHHz2tIHg1T"
+    },
+    "outdoor_beta": {
+      "type": "vector",
+      "url": "https://api.maptiler.com/tiles/outdoor/tiles.json?key=uCGQnnA1MXHHz2tIHg1T"
+    },
+    "terrain-rgb": {
+      "type": "raster-dem",
+      "url": "https://api.maptiler.com/tiles/terrain-rgb/tiles.json?key=uCGQnnA1MXHHz2tIHg1T"
+    }
+  },
+  "sprite": "https://cloud.maptiler.com/api/sprites/42bf4bb3-099f-4e14-a6f1-1f1c10c6cd66",
+  "version": 8,
+  "zoom": 14.2050807128412
+}
